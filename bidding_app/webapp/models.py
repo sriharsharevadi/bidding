@@ -39,7 +39,7 @@ class Order(TimeStampMixin):
     #     unique_together = ('type', 'user')
 
     def __str__(self):
-        return 'Bid: ' + self.id
+        return self.user.username + " " + str(self.id)
 
 
 class Bid(TimeStampMixin):
@@ -58,12 +58,12 @@ class Bid(TimeStampMixin):
         ordering = ['price']
 
     def __str__(self):
-        return 'Bid: ' + self.id
+        return self.user.username + " " + str(self.id)
 
 
 class Config(TimeStampMixin):
     name = models.CharField(max_length=30)
-    description = models.CharField(max_length=200)
+    description = models.TextField(max_length=200)
     enabled = models.BooleanField(default=False)
 
     def __str__(self):

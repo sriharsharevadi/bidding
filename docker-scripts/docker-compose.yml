@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  haproxy:
+    image: sriharsharevadi/bidding_app:bidding_app_gcloud
+    ports:
+      - 80:80
+    restart: unless-stopped

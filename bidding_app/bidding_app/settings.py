@@ -78,11 +78,30 @@ WSGI_APPLICATION = 'bidding_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db_final.sqlite3',
+#     }
+# }
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db_final.sqlite3',
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'bidding_app',
+
+        'USER': 'sriharsha',
+
+        'PASSWORD': '6xp3chvsu40L0N6b',
+
+        'HOST': '10.148.0.3',
+
+        'PORT': '5432',
+
     }
+
 }
 
 

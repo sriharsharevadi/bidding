@@ -35,6 +35,7 @@ incremental==17.5.0
 msgpack==1.0.0
 multidict==5.0.2
 promise==2.3
+psycopg2-binary==2.8.6
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.20
